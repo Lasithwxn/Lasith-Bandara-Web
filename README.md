@@ -1,5 +1,5 @@
 
-# Lasith Bandara's Portfolio Web App. #
+# Lasith Bandara's Portfolio Web App #
 
 Portfolio Screenshot
 (Replace with a real screenshot of your app once deployed!)
