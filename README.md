@@ -1,7 +1,11 @@
 # Lasith Bandara's Portfolio Web App #
 
 # Portfolio Screenshot #
-(Replace with a real screenshot of your app once deployed!)
+
+<img width="1896" height="945" alt="image" src="https://github.com/user-attachments/assets/2ec7f2ae-74ec-4ff8-99f3-b3cae3cd85f0" />
+
+<img width="1893" height="944" alt="image" src="https://github.com/user-attachments/assets/f764463c-c9b7-44ca-8b42-5c09be08e3dc" />
+
 
 
 # 🚀 Description #
