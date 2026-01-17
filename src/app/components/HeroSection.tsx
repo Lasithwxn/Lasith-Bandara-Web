@@ -66,10 +66,14 @@ export function HeroSection() {
           >
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-emerald-100 to-blue-100 dark:from-emerald-900/30 dark:to-blue-900/30 rounded-3xl transform rotate-3"></div>
-              <img 
-  src="public/profile.png"
+             <img
+  src="/profile.png"
   alt="Lasith Bandara"
   className="relative rounded-3xl w-full max-w-md h-auto object-cover shadow-2xl"
+  onError={(e) => {
+    console.error('Image failed to load:', e.target.src);  // Logs the bad URL
+    e.target.src = '/default-avatar.png';  // Swap to a backup image
+  }}
 />
             </div>
           </motion.div>
