@@ -1,9 +1,4 @@
-
 # Lasith Bandara's Portfolio Web App #
-
-Portfolio Screenshot
-(Replace with a real screenshot of your app once deployed!)
-
 
 # 🚀 Description #
 Welcome to my personal portfolio website! Built with modern web technologies, this responsive app showcases my skills, projects, certifications, and contact info. It's a single-page application (SPA) with smooth sections for easy navigation.
@@ -36,6 +31,12 @@ Build for Production:textnpm run buildOutput in /dist folder – ready for hosti
  # 🌐 Live Demo #
 Check it out live: lasith-bandara-web.vercel.app
 (Update this link once you deploy – try Vercel or GitHub Pages!)
+
+# Portfolio Screenshot #
+
+<img width="1896" height="945" alt="image" src="https://github.com/user-attachments/assets/2ec7f2ae-74ec-4ff8-99f3-b3cae3cd85f0" />
+<img width="1893" height="944" alt="image" src="https://github.com/user-attachments/assets/f764463c-c9b7-44ca-8b42-5c09be08e3dc" />
+
 
 # 📁 Project Structure #
 textLasith-Bandara-Web/
