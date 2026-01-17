@@ -66,11 +66,11 @@ export function HeroSection() {
           >
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-emerald-100 to-blue-100 dark:from-emerald-900/30 dark:to-blue-900/30 rounded-3xl transform rotate-3"></div>
-              <ImageWithFallback 
-                src="public/profile.png"
-                alt="Lasith Bandara"
-                className="relative rounded-3xl w-full max-w-md h-auto object-cover shadow-2xl"
-              />
+              <img 
+  src="public/profile.png"
+  alt="Lasith Bandara"
+  className="relative rounded-3xl w-full max-w-md h-auto object-cover shadow-2xl"
+/>
             </div>
           </motion.div>
         </div>
