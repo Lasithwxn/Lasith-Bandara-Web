@@ -19,7 +19,7 @@ export function HeroSection() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-slate-900 dark:text-slate-100 mb-4">
+            <h1 className="text-5xl text-slate-900 dark:text-slate-100 mb-4">
               Lasith Bandara
             </h1>
             
@@ -28,7 +28,7 @@ export function HeroSection() {
             </p>
             
             <p className="text-lg text-slate-600 dark:text-slate-400 mb-8">
-              Undergraduate Technology Student | AI & Software Enthusiast
+              Undergraduate AI Student | AI & Software Enthusiast
             </p>
             
             <p className="text-base text-slate-600 dark:text-slate-400 mb-10 max-w-lg leading-relaxed">
@@ -48,6 +48,7 @@ export function HeroSection() {
               <Button 
                 variant="outline" 
                 size="lg"
+                onClick={() => window.open("https://docs.google.com/document/d/1SBJqa0CGlYck3JoeBvf9comICaNBfPX7/edit?usp=drive_link&ouid=103290585522719682877&rtpof=true&sd=true", "_blank")}
                 className="border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800"
               >
                 <Download className="w-5 h-5 mr-2" />
@@ -66,7 +67,7 @@ export function HeroSection() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-emerald-100 to-blue-100 dark:from-emerald-900/30 dark:to-blue-900/30 rounded-3xl transform rotate-3"></div>
               <ImageWithFallback 
-                src="https://images.unsplash.com/photo-1621274790572-7c32596bc67f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBzdHVkZW50JTIwcG9ydHJhaXR8ZW58MXx8fHwxNzY3OTQ3MzY2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src="public/profile.png"
                 alt="Lasith Bandara"
                 className="relative rounded-3xl w-full max-w-md h-auto object-cover shadow-2xl"
               />

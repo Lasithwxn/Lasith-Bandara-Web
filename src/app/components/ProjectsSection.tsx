@@ -9,8 +9,9 @@ const projects = [
     description: "Machine learning model for data classification using Python and scikit-learn",
     image: "https://images.unsplash.com/photo-1526378722484-bd91ca387e72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYWNoaW5lJTIwbGVhcm5pbmclMjBjb2RlfGVufDF8fHx8MTc2NjkwNzEwMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     tech: ["Python", "ML", "Jupyter"],
-    status: "Completed",
+    status: "Learning Project",
     github: true,
+    githubUrl: "https://github.com/lasithbandara/ai-academic-project",
     demo: false
   },
   {
@@ -18,16 +19,18 @@ const projects = [
     description: "Modern responsive portfolio built with React and Tailwind CSS",
     image: "https://images.unsplash.com/photo-1587120511358-98f9104cc096?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwaWxsdXN0cmF0aW9ufGVufDF8fHx8MTc2NjgxMDI3MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     tech: ["React", "Tailwind", "TypeScript"],
-    status: "Completed",
+    status: "Learning Project",
     github: true,
-    demo: true
+    githubUrl: "https://github.com/lasithbandara/portfolio-website",
+    demo: true,
+    demoUrl: "https://lasithbandara.dev"
   },
   {
     title: "Cloud Infrastructure Learning",
     description: "Hands-on AWS projects exploring EC2, S3, and Lambda services",
     image: "https://images.unsplash.com/photo-1660165458059-57cfb6cc87e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxBSSUyMHRlY2hub2xvZ3klMjBhYnN0cmFjdHxlbnwxfHx8fDE3NjY4NDk1NzR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     tech: ["AWS", "Cloud", "DevOps"],
-    status: "In Progress",
+    status: "Learning Project",
     github: false,
     demo: false
   },
@@ -38,6 +41,7 @@ const projects = [
     tech: ["JavaScript", "APIs", "Data Viz"],
     status: "Learning Project",
     github: true,
+    githubUrl: "https://github.com/lasithbandara/sustainability-tracker",
     demo: false
   },
   {
@@ -47,6 +51,7 @@ const projects = [
     tech: ["TensorFlow", "Python", "AI"],
     status: "In Progress",
     github: true,
+    githubUrl: "https://github.com/lasithbandara/neural-network-fundamentals",
     demo: false
   },
   {
@@ -56,7 +61,9 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     status: "Learning Project",
     github: true,
-    demo: true
+    githubUrl: "https://github.com/lasithbandara/web-dev-practice",
+    demo: true,
+    demoUrl: "https://example-web-dev-projects.com"
   },
 ];
 
@@ -103,13 +110,19 @@ function ProjectCard({ project, index }: { project: typeof projects[0], index: n
         </div>
         <div className="flex gap-2">
           {project.github && (
-            <button className="flex items-center gap-1 px-3 py-1.5 text-sm bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 rounded-lg transition-colors">
+            <button 
+              onClick={() => window.open(project.githubUrl, "_blank")}
+              className="flex items-center gap-1 px-3 py-1.5 text-sm bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 rounded-lg transition-colors"
+            >
               <Github className="w-4 h-4" />
               GitHub
             </button>
           )}
           {project.demo && (
-            <button className="flex items-center gap-1 px-3 py-1.5 text-sm bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 hover:bg-emerald-200 dark:hover:bg-emerald-900/50 rounded-lg transition-colors">
+            <button 
+              onClick={() => window.open(project.demoUrl, "_blank")}
+              className="flex items-center gap-1 px-3 py-1.5 text-sm bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 hover:bg-emerald-200 dark:hover:bg-emerald-900/50 rounded-lg transition-colors"
+            >
               <ExternalLink className="w-4 h-4" />
               Demo
             </button>

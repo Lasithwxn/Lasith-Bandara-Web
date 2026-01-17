@@ -11,9 +11,9 @@ export function FooterSection() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { name: "LinkedIn", icon: Linkedin, url: "https://linkedin.com" },
-    { name: "GitHub", icon: Github, url: "https://github.com" },
-    { name: "Instagram", icon: Instagram, url: "https://instagram.com" },
+    { name: "LinkedIn", icon: Linkedin, url: "https://www.linkedin.com/in/lasithwxn/" },
+    { name: "GitHub", icon: Github, url: "https://github.com/Lasithwxn" },
+    { name: "Instagram", icon: Instagram, url: "https://www.instagram.com/lasithwxn" },
     { name: "ArtStation", icon: ArtStationIcon, url: "https://artstation.com" },
     { name: "Twitter", icon: Twitter, url: "https://twitter.com" },
   ];

@@ -3,24 +3,28 @@ import { Award } from "lucide-react";
 
 const certifications = [
   {
-    title: "Fundamentals of Deep Learning",
+    title: "Generative AI with Diffusion Models",
     issuer: "NVIDIA",
-    description: "Completed comprehensive training in neural networks and deep learning fundamentals"
+    description: "Completed comprehensive training in neural networks and Gen AI with Diffusion Models fundamentals",
+    url: "https://learn.nvidia.com/certificates?id=POLGjgb2QRWT4m-QhgrLLQ#"
   },
   {
     title: "Introduction to Artificial Intelligence",
     issuer: "Microsoft",
-    description: "Learned core AI concepts, machine learning principles, and practical applications"
+    description: "Learned core AI concepts, machine learning principles, and practical applications",
+    url: "https://learn.microsoft.com/en-us/users/lasithbandara-3304/achievements/8zastyaw?ref=https%3A%2F%2Fwww.linkedin.com%2F"
   },
   {
-    title: "Machine Learning Foundations",
+    title: "SQL for Data Analysis",
     issuer: "LinkedIn Learning",
-    description: "Gained expertise in ML algorithms, data preprocessing, and model evaluation"
+    description: "Learned fundamental SQL queries and data analysis techniques",
+    url: "https://www.linkedin.com/learning/certificates/05e390fd8ed158cd930544e19374776fc0ffcf9a0dd4d89edb5bce3e747b2a01?trk=share_certificate"
   },
   {
-    title: "GitHub Foundations",
+    title: "Practical GitHub Actions",
     issuer: "GitHub",
-    description: "Mastered version control, collaboration workflows, and open source contribution"
+    description: "Mastered automated workflows, CI/CD pipelines, and deployment automation using GitHub Actions",
+    url: "https://www.linkedin.com/learning/certificates/9a791470e6c498573f4d5bbb4769871fff224c7c2abf64fb919d2cecafa23839?trk=share_certificate"
   },
 ];
 
@@ -56,9 +60,12 @@ export function CertificationsSection() {
                 </div>
               </div>
               <div>
-                <h3 className="text-lg text-slate-900 dark:text-slate-100 mb-1">
+                <button 
+                  className="text-lg text-slate-900 dark:text-slate-100 mb-1 cursor-pointer hover:underline text-left bg-transparent border-none p-0"
+                  onClick={() => window.open(cert.url, "_blank")}
+                >
                   {cert.title}
-                </h3>
+                </button>
                 <p className="text-sm text-blue-600 dark:text-blue-400 mb-2">
                   {cert.issuer}
                 </p>
