@@ -1,7 +1,7 @@
 # Lasith Bandara's Portfolio Web App #
 
 # 🚀 Description #
-Welcome to my personal portfolio website! Built with modern web technologies, this responsive app showcases my skills, projects, certifications, and contact info. It's a single-page application (SPA) with smooth sections for easy navigation.
+Welcome to my personal portfolio website! Built with modern web technologies, this responsive app showcases my skills, projects, certifications, and contact info. It's a single-page application with smooth sections for easy navigation.
 Perfect for developers, designers, or anyone building a professional online presence. Fork it, tweak it, and make it your own!
 ✨ Features
 
