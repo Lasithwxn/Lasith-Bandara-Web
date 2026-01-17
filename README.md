@@ -1,4 +1,3 @@
-
 # Lasith Bandara's Portfolio Web App #
 
 Portfolio Screenshot
