@@ -1,6 +1,5 @@
 import { Button } from "./ui/button";
 import { Download, Folder } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { motion } from "motion/react";
 
 export function HeroSection() {
@@ -9,18 +8,15 @@ export function HeroSection() {
     element?.scrollIntoView({ behavior: "smooth" });
   };
 
-  // Use Vite's BASE_URL for dynamic asset prefixing (works in dev/prod/GitHub Pages)
-  const baseUrl = import.meta.env.BASE_URL;
-
   return (
     <section id="hero" className="min-h-screen flex items-center bg-gradient-to-br from-slate-50 via-emerald-50/30 to-blue-50/40 dark:from-slate-900 dark:via-emerald-950/20 dark:to-blue-950/30 pt-24 transition-colors">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           {/* Left Side - Text Content */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <h1 className="text-5xl text-slate-900 dark:text-slate-100 mb-4">
               Lasith Bandara
@@ -61,22 +57,22 @@ export function HeroSection() {
           </motion.div>
           {/* Right Side - Profile Image */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="flex justify-center lg:justify-end"
           >
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-emerald-100 to-blue-100 dark:from-emerald-900/30 dark:to-blue-900/30 rounded-3xl transform rotate-3"></div>
-              <img
-                src={`${baseUrl}profile.png`}  // <-- FIXED: Prefix with BASE_URL for GitHub Pages subdir
-                alt="Lasith Bandara"
-                className="relative rounded-3xl w-full max-w-md h-auto object-cover shadow-2xl"
-                onError={(e) => {
-                  console.error('Image failed to load:', e.target.src); // Logs the bad URL
-                  e.target.src = `${baseUrl}default-avatar.png`; // <-- FIXED: Prefix fallback too
-                }}
-              />
+             <img
+  src="/profile.png"
+  alt="Lasith Bandara"
+  className="relative rounded-3xl w-full max-w-md h-auto object-cover shadow-2xl"
+  onError={(e) => {
+    console.error('Image failed to load:', (e.target as HTMLImageElement).src);  // Logs the bad URL
+    (e.target as HTMLImageElement).src = '/default-avatar.png';  // Swap to a backup image
+  }}
+/>
             </div>
           </motion.div>
         </div>

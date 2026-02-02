@@ -9,11 +9,11 @@ const TikTokIcon = () => (
 );
 
 const socialLinks = [
-  { name: "GitHub", icon: Github, url: "https://github.com", color: "hover:text-slate-700 dark:hover:text-slate-300" },
-  { name: "LinkedIn", icon: Linkedin, url: "https://linkedin.com", color: "hover:text-blue-600 dark:hover:text-blue-400" },
-  { name: "Instagram", icon: Instagram, url: "https://instagram.com", color: "hover:text-pink-600 dark:hover:text-pink-400" },
-  { name: "TikTok", icon: TikTokIcon, url: "https://tiktok.com", color: "hover:text-slate-900 dark:hover:text-white" },
-  { name: "YouTube", icon: Youtube, url: "https://youtube.com", color: "hover:text-red-600 dark:hover:text-red-400" },
+  { name: "GitHub", icon: Github, url: "https://github.com/Lasithwxn", color: "hover:text-slate-700 dark:hover:text-slate-300" },
+  { name: "LinkedIn", icon: Linkedin, url: "https://www.linkedin.com/in/lasithwxn/", color: "hover:text-blue-600 dark:hover:text-blue-400" },
+  { name: "Instagram", icon: Instagram, url: "https://instagram.com/lasithwxn", color: "hover:text-pink-600 dark:hover:text-pink-400" },
+  { name: "TikTok", icon: TikTokIcon, url: "https://tiktok.com/@lasithwxn", color: "hover:text-slate-900 dark:hover:text-white" },
+  { name: "YouTube", icon: Youtube, url: "https://www.youtube.com/@Lasithwxn", color: "hover:text-red-600 dark:hover:text-red-400" },
 ];
 
 export function SocialSection() {
