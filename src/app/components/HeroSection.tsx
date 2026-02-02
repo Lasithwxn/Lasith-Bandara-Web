@@ -1,5 +1,6 @@
 import { Button } from "./ui/button";
 import { Download, Folder } from "lucide-react";
+import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { motion } from "motion/react";
 
 export function HeroSection() {
@@ -7,6 +8,8 @@ export function HeroSection() {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
   };
+
+  const baseUrl = import.meta.env.BASE_URL;
 
   return (
     <section id="hero" className="min-h-screen flex items-center bg-gradient-to-br from-slate-50 via-emerald-50/30 to-blue-50/40 dark:from-slate-900 dark:via-emerald-950/20 dark:to-blue-950/30 pt-24 transition-colors">
@@ -64,15 +67,11 @@ export function HeroSection() {
           >
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-emerald-100 to-blue-100 dark:from-emerald-900/30 dark:to-blue-900/30 rounded-3xl transform rotate-3"></div>
-             <img
-  src="/profile.png"
-  alt="Lasith Bandara"
-  className="relative rounded-3xl w-full max-w-md h-auto object-cover shadow-2xl"
-  onError={(e) => {
-    console.error('Image failed to load:', (e.target as HTMLImageElement).src);  // Logs the bad URL
-    (e.target as HTMLImageElement).src = '/default-avatar.png';  // Swap to a backup image
-  }}
-/>
+              <ImageWithFallback
+                src={`${baseUrl}proV2.png`}
+                alt="Lasith Bandara"
+                className="relative rounded-3xl w-full max-w-md h-auto object-cover shadow-2xl"
+              />
             </div>
           </motion.div>
         </div>
