@@ -34,8 +34,10 @@ Check it out live: lasith-bandara-web.vercel.app
 
 # Portfolio Screenshot #
 
-<img width="1896" height="945" alt="image" src="https://github.com/user-attachments/assets/2ec7f2ae-74ec-4ff8-99f3-b3cae3cd85f0" />
-<img width="1893" height="944" alt="image" src="https://github.com/user-attachments/assets/f764463c-c9b7-44ca-8b42-5c09be08e3dc" />
+<img width="1893" height="902" alt="image" src="https://github.com/user-attachments/assets/ee134285-e3a9-4a91-ae59-7116739e4dba" />
+
+<img width="1896" height="892" alt="image" src="https://github.com/user-attachments/assets/e53de6c9-f040-44c9-b52d-07b7bb409cb7" />
+
 
 
 # 📁 Project Structure #
