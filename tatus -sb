@@ -1,0 +1,37 @@
+* [33mfcf1c2e[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Fix header formatting in README.md
+* [33m5b4e61b[m Update README.md
+* [33m63c29ff[m Rename ChatGPT Image Feb 1, 2026, 09_37_34 PM (1).png to profile2.png
+* [33m8bd9ca8[m profile update
+* [33m2d278b0[m Update vite.config.ts
+* [33m1bca6a1[m Update HeroSection.tsx
+[31m|[m * [33m06c4d43[m[33m ([m[1;32mmain[m[33m)[m 2026.2.2last update
+[31m|[m[31m/[m  
+* [33me2622a1[m Update HeroSection.tsx
+* [33mae2d56d[m Update README.md
+* [33md7c471b[m Merge branch 'main' of https://github.com/Lasithwxn/Lasith-Bandara-Web
+*   [33mfe5c592[m Merge branch 'main' of https://github.com/Lasithwxn/Lasith-Bandara-Web
+[33m|[m[34m\[m  
+[33m|[m * [33m879b540[m Update README.md
+[33m|[m * [33m0cebdec[m Update README.md
+[33m|[m * [33mca9bc0b[m Update README.md
+[33m|[m * [33mc92fa22[m Update README.md
+[33m|[m * [33m776d393[m Fix formatting in README.md
+* [34m|[m [33m343866c[m cc
+* [34m|[m [33m8e91111[m Update 2.0
+* [34m|[m [33m5b1509d[m name tab
+* [34m|[m [33m6d6074a[m feat: Add index.html and profile image; update components with new certifications, links, and project details
+[34m|[m[34m/[m  
+* [33m9ec0b33[m profile pic
+* [33m6a766c7[m Update vite.config.ts
+* [33m6d16caa[m Fix heading formatting in README.md
+*   [33mccce0f4[m Merge branch 'main' of https://github.com/Lasithwxn/Lasith-Bandara-Web
+[35m|[m[36m\[m  
+[35m|[m * [33m96310c9[m Update README.md
+[35m|[m * [33mf31cd40[m Remove placeholder text from README
+[35m|[m * [33m1570284[m Update README.md
+[35m|[m * [33mdc7358d[m Add GitHub Actions workflow for Vite deployment
+* [36m|[m [33mea564f2[m Fix npm audit vuln by updating Vite deps
+[36m|[m[36m/[m  
+* [33m57c0a8f[m Add GitHub Actions workflow for Jekyll deployment
+* [33m149327a[m update README
+* [33mb748340[m upload file
